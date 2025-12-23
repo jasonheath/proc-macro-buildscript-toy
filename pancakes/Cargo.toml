@@ -1,0 +1,13 @@
+[package]
+name = "pancakes"
+version = "0.1.0"
+edition = "2024"
+default-run = "pancakes"
+
+[dependencies]
+hello_macro = { path = "../hello_macro" }
+hello_macro_derive = { path = "../hello_macro/hello_macro_derive" }
+
+[build-dependencies]
+strum = "0.27.2"
+strum_macros = "0.27.2"
