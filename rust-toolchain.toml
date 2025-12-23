@@ -1,8 +1,8 @@
 [toolchain]
 # channel = "1.89.0"
-channel = "1.90.0"
+# channel = "1.90.0"
 # channel = "1.91.0"
-# channel = "1.91.1"
+channel = "1.91.1"
 # channel = "stable"
 # channel = "beta"
 # channel = "nightly"
