@@ -1,0 +1,31 @@
+[build]
+# target = "x86_64-unknown-linux-gnu"
+target = "x86_64-unknown-linux-musl"
+
+[target.x86_64-unknown-linux-musl]
+# linker = "…"              # linker to use
+# rustflags = ["…", "…"]    # custom flags for `rustc`
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-Clinker-features=-lld"]
+
+[term]
+quiet = false
+verbose = true
+
+# rustflags = ["…", "…"]        # custom flags to pass to all compiler invocations
+# rustdocflags = ["…", "…"]     # custom flags to pass to rustdoc
+
+# [env]
+# # Set ENV_VAR_NAME=value for any process run by Cargo
+# ENV_VAR_NAME = "value"
+# # Set even if already present in environment
+# ENV_VAR_NAME_2 = { value = "value", force = true }
+# # `value` is relative to the parent of `.cargo/config.toml`, env var will be the full absolute path
+# ENV_VAR_NAME_3 = { value = "relative/path", relative = true }
+
+# [profile.<name>]         # Modify profile settings via config.
+# lto = false              # Sets link-time optimization.
+# rpath = false            # Sets the rpath linking option.
+# [profile.<name>.build-override]  # Overrides build-script settings.
+# # Same keys for a normal profile.
