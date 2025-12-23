@@ -1,13 +1,13 @@
 [build]
-# target = "x86_64-unknown-linux-gnu"
 target = "x86_64-unknown-linux-musl"
 
 [target.x86_64-unknown-linux-musl]
-# linker = "…"              # linker to use
-# rustflags = ["…", "…"]    # custom flags for `rustc`
+rustflags = ["-Crelocation-model=static"]
+# linker = "…"
 
 [target.x86_64-unknown-linux-gnu]
 rustflags = ["-Clinker-features=-lld"]
+# linker = "…"
 
 [term]
 quiet = false
